@@ -2,6 +2,23 @@
 
 Official TypeScript SDK for SYSQ mailbox automation.
 
+## Install
+
+Install from npm:
+
+```bash
+npm i @suiyongsuiqi/sysq-sdk
+```
+
+Build from source:
+
+```bash
+git clone https://github.com/suiyongsuiqi/sysq-sdk.git
+cd sysq-sdk
+pnpm install
+pnpm build
+```
+
 This package is being bootstrapped as the shared core for:
 
 - `sysq-cli`
