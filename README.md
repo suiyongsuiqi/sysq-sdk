@@ -2,6 +2,7 @@
 
 Official TypeScript SDK for SYSQ mailbox automation.
 
+`sysq-sdk` is the official TypeScript SDK for SYSQ. It provides stable, reusable OpenAPI access for mailbox assets, message retrieval, read-state updates, API key operations, and shared SYSQ request and error contracts. It is designed to be the unified business access layer for Node.js services, scripts, CLIs, and other higher-level SYSQ integrations.
 This package is being bootstrapped as the shared core for:
 
 - `sysq-cli`
