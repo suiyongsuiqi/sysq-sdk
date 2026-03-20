@@ -38,6 +38,11 @@ const mailboxes = await sdk.mail.fetchUserMailBoxes({ current: 1, size: 20 });
 console.log(mailboxes.records);
 ```
 
+Notes:
+
+- The SDK always sends `Tenant-Id: 000000`, which matches the current SYSQ backend contract.
+- SYSQ server responses are keyed by `errorKey`; response localization is handled by clients, not by passing a locale to the backend.
+
 ## Scripts
 
 ```bash

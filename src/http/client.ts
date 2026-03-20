@@ -15,8 +15,6 @@ export type RequestOptions = RequestInit & {
 
 export type SysqClientConfig = {
   baseUrl: string;
-  tenantId?: string;
-  locale?: string;
   apiKey?: string;
   accessToken?: string;
   fetcher?: typeof fetch;
@@ -66,11 +64,7 @@ export class SysqClient {
     }
 
     if (!headers.has('Tenant-Id')) {
-      headers.set('Tenant-Id', this.config.tenantId ?? DEFAULT_TENANT_ID);
-    }
-
-    if (this.config.locale && !headers.has('Accept-Language')) {
-      headers.set('Accept-Language', this.config.locale);
+      headers.set('Tenant-Id', DEFAULT_TENANT_ID);
     }
 
     if (!options.skipAuth && !headers.has('Sysq-Auth')) {
